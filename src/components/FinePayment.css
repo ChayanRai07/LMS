@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #e2e2e2, #f0f4f8);
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Fine Payment Container */
+  .fine-payment {
+    padding: 40px;
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .fine-payment:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Title Styles */
+  .fine-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4b1248;
+  }
+  
+  /* Form Styles */
+  .fine-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Checkbox Container Styles */
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Checkbox Styles */
+  .fine-checkbox {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Label Styles */
+  .fine-label {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  /* Submit Button Styles */
+  .fine-submit {
+    background: #66bb6a;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .fine-submit:hover {
+    background: #5aa860;
+    transform: translateY(-2px);
+  }
+  
+  /* Message Styles */
+  .fine-message {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #d9534f;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Fade In Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .fine-payment {
+      padding: 20px;
+    }
+    
+    .fine-title {
+      font-size: 1.5rem;
+    }
+    
+    .fine-submit {
+      width: 100%;
+    }
+  }
+  

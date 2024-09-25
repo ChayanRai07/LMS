@@ -1,0 +1,176 @@
+/* Calm and Beautiful Background */
+body {
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+h2 {
+  color: #333;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 30px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  animation: fadeInTitle 1s ease;
+}
+
+/* Form Styling */
+form {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  animation: fadeInUp 0.7s ease-in-out;
+}
+
+/* Form Elements */
+input, select, button {
+  margin: 15px 0;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+/* Interactive Input Focus */
+input:focus, select:focus {
+  outline: none;
+  border-color: #66bb6a;
+  box-shadow: 0 0 15px rgba(102, 187, 106, 0.4);
+  background-color: #f0f9f8;
+}
+
+input:hover, select:hover {
+  border-color: #66bb6a;
+}
+
+/* Button Styling */
+button {
+  background-color: #66bb6a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.4s ease;
+  border-radius: 12px;
+}
+
+button:hover {
+  background-color: #5aa860;
+  transform: scale(1.07);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInTitle {
+  from {
+    opacity: 0;
+    transform: translateY(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fine Payment Checkbox */
+input[type="checkbox"] {
+  transform: scale(1.2);
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:hover {
+  transform: scale(1.4);
+}
+
+/* Success/Error Animations */
+.success {
+  color: #66bb6a;
+  font-weight: bold;
+  animation: successPop 0.5s ease;
+}
+
+.error {
+  color: #e57373;
+  font-weight: bold;
+  animation: errorShake 0.5s ease;
+}
+
+@keyframes successPop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes errorShake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-6px);
+  }
+  50% {
+    transform: translateX(6px);
+  }
+  75% {
+    transform: translateX(-6px);
+  }
+}
+
+/* Subtle Hover Effects */
+form input, form select {
+  background-color: #f8f9fa;
+  transition: background-color 0.4s ease, border-color 0.4s ease;
+}
+
+form input:hover, form select:hover {
+  background-color: #eef6f7;
+}
+
+/* Soft Transitions */
+.container {
+  animation: fadeIn 0.6s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
